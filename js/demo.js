@@ -32,13 +32,14 @@ function addBookToLibrary(event)
 
 function showLibrary() 
 {
+    const bookList = document.querySelector('#library');
+
     for(let mybooks = 0; mybooks < myLibrary.length; mybooks++)
     {
-        const library = document.getElementById('library')
         const book = document.createElement('div')
 
         book.innerHTML = 'This is the book'
-        library.appendChild(book)
+        bookList.appendChild(book)
     }
 }
 
