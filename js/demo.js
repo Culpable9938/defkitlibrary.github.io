@@ -19,6 +19,9 @@ function Book(title, author, pages, read)
 
 function addBookToLibrary(event)
 {
+
+    event.preventDefault();
+    
     let name = 'asd'
     let author = 'author'
     let pages = 'pages'
@@ -27,7 +30,6 @@ function addBookToLibrary(event)
     let myBook = new Book(name,author,pages, read)
     myLibrary.push(myBook)
 
-    event.preventDefault();
 }
 
 function showLibrary() 
