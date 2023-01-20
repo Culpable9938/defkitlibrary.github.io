@@ -34,7 +34,7 @@ function showLibrary()
 {
     for(let mybooks = 0; mybooks < myLibrary.length; mybooks++)
     {
-        const library = document.querySelector(".library")
+        const library = document.querySelector("#library")
         const book = document.createElement('div')
 
         book.innerHTML = 'This is the book'
