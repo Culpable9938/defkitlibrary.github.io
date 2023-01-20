@@ -17,11 +17,8 @@ function Book(title, author, pages, read)
     this.read = read
 }
 
-document.getElementById('addBookForm').addEventListener('submit', addBookToLibrary)
-
-function addBookToLibrary(event)
+function addBookToLibrary()
 {
-    event.preventDefault();
 
     let name = 'asd'
     let author = 'author'
