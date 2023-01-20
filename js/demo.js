@@ -31,7 +31,7 @@ function addBookToLibrary(event)
     let myBook = new Book(name,author,pages, read)
     myLibrary.push(myBook)
 
-    showLibrary()
+    console.log('asd')
 }
 
 function showLibrary() 
