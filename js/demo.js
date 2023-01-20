@@ -17,7 +17,7 @@ function Book(title, author, pages, read)
     this.read = read
 }
 
-function addBookToLibrary()
+function addBookToLibrary(event)
 {
     let name = 'asd'
     let author = 'author'
@@ -26,13 +26,20 @@ function addBookToLibrary()
 
     let myBook = new Book(name,author,pages, read)
     myLibrary.push(myBook)
+
+    event.preventDefault();
 }
 
-addBookToLibrary()
-addBookToLibrary()
-
-
-for(let mybooks = 0; mybooks < myLibrary.length; mybooks++)
+function showLibrary() 
 {
-    console.log(myLibrary[mybooks])
+    for(let mybooks = 0; mybooks < myLibrary.length; mybooks++)
+    {
+        const library = document.querySelector(".library")
+        const book = document.createElement('div')
+
+        book.innerHTML = 'This is the book'
+        library.appendChild(book)
+    }
 }
+
+showLibrary()
