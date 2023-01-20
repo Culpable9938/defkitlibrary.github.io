@@ -19,9 +19,8 @@ function Book(title, author, pages, read)
 
 function addBookToLibrary(event)
 {
-
     event.preventDefault();
-    
+
     let name = 'asd'
     let author = 'author'
     let pages = 'pages'
@@ -31,6 +30,8 @@ function addBookToLibrary(event)
     myLibrary.push(myBook)
 
 }
+
+document.getElementById('addBookForm').addEventListener('submit', addBookToLibrary)
 
 function showLibrary() 
 {
@@ -46,4 +47,3 @@ function showLibrary()
 }
 
 showLibrary()
-console.log('done')
