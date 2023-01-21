@@ -42,8 +42,9 @@ function showLibrary()
     {
         const book = document.createElement('div')
 
-        book.innerHTML = '<h4>' + myLibrary[mybooks].title + '</h4> <h5>by ' + myLibrary[mybooks].author + '</h5> <h6>' + myLibrary[mybooks].pages + 'pages </h6>'
+        book.innerHTML = '<h4>' + myLibrary[mybooks].title + '</h4> <h5>by ' + myLibrary[mybooks].author + '</h5> <h6>' + myLibrary[mybooks].pages + ' pages </h6>'
         book.classList.add('books')
+        book.setAttribute("data-index", mybooks)
         bookList.appendChild(book)
 
     }
