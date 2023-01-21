@@ -23,7 +23,7 @@ function addBookToLibrary() {
     let myBook = new Book(name,author,pages, read)
     myLibrary.push(myBook)
 
-    console.log('bleh')
+    console.log('nyeh')
 
     showLibrary()
 
