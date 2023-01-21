@@ -15,15 +15,15 @@ function Book(title, author, pages, read)
 
 
 function addBookToLibrary() { 
-    let name = document.getElementById('title').value
-    let author = document.getElementById('author').value
-    let pages = document.getElementById('pages').value
-    let read = false
+    const name = document.getElementById('title').value
+    const author = document.getElementById('author').value
+    const pages = document.getElementById('pages').value
+    const read = false
 
     let myBook = new Book(name,author,pages, read)
     myLibrary.push(myBook)
 
-    console.log('bleh')
+    console.log(document.getElementById('title').value)
 
     showLibrary()
 
@@ -44,7 +44,7 @@ function showLibrary()
     {
         const book = document.createElement('div')
 
-        book.innerHTML = '<h4>' + title + '</h4> <h5>by ' + author + '</h5><br> <p>by ' + pages + '</p>'
+        book.innerHTML = '<h4>' + title + '</h4> <h5>by ' + author + '</h5><br> <p>' + pages + 'pages </p>'
         book.classList.add('books')
         bookList.appendChild(book)
 
