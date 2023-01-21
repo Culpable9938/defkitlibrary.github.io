@@ -129,14 +129,16 @@ h6 { font-size: 1.5rem; letter-spacing: 0; }
 #library
 {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .books
 {
   box-sizing: border-box;
   padding: 20px;
-  border: 1px solid rgb(255, 255, 255);
-  margin: 2px;
+  border: 1px solid #D1D1D1;
+  margin: 5px;
+  margin-left: 0px;
   border-radius: 10px;
 }
 
