@@ -1,5 +1,6 @@
 
 
+
 let myLibrary = [
     {
         title: "A Game of Thrones",
@@ -27,7 +28,8 @@ function addBookToLibrary() {
     let myBook = new Book(name,author,pages, read)
     myLibrary.push(myBook)
 
-    console.log('asd')
+
+    showLibrary()
 
 } 
 
@@ -45,4 +47,3 @@ function showLibrary()
     }
 }
 
-showLibrary()
