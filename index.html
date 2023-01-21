@@ -34,7 +34,7 @@
     <div class="row">
       <div class="one-half column" style="margin-top: 25%">
         <h4>Basic Page</h4>
-        <form onsubmit="return false" onclick="addBookToLibrary()">
+        <form onsubmit="return false">
             <label for="">Title</label>
             <input type="text" name="title" id="title">
 
@@ -48,7 +48,7 @@
             <input type="checkbox" name="read" id="read">
             <br>
 
-            <input type="submit" value="Add new book">
+            <input type="submit" value="Add new book" onclick="addBookToLibrary()">
             
         </form>
       </div>

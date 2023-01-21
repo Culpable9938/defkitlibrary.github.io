@@ -28,8 +28,6 @@ function addBookToLibrary() {
     let myBook = new Book(name,author,pages, read)
     myLibrary.push(myBook)
 
-
-
     showLibrary()
 
 } 
@@ -57,3 +55,5 @@ function clearLibrary()
 
     bookList.innerHTML = ""
 }
+
+showLibrary()
