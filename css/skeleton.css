@@ -113,6 +113,11 @@ h6 { font-size: 1.5rem; letter-spacing: 0; }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+  }
+
   h1 { font-size: 5.0rem; }
   h2 { font-size: 4.2rem; }
   h3 { font-size: 3.6rem; }
@@ -130,7 +135,7 @@ h6 { font-size: 1.5rem; letter-spacing: 0; }
 {
   box-sizing: border-box;
   padding: 20px;
-  border: 1px solid lightgray;
+  border: 1px solid rgb(255, 255, 255);
   margin: 2px;
   border-radius: 10px;
 }
