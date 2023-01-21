@@ -2,12 +2,7 @@
 
 
 let myLibrary = [
-    {
-        title: "A Game of Thrones",
-        author: "George R. R. Martin",
-        pages: 694,
-        read: false
-    }
+
 ];
 
 function Book(title, author, pages, read)
@@ -20,9 +15,9 @@ function Book(title, author, pages, read)
 
 
 function addBookToLibrary() { 
-    let name = document.getElementsByName('title').value
-    let author = document.getElementsByName('author').value
-    let pages = document.getElementsByName('pages').value
+    let name = document.getElementsByName('title')[0].value
+    let author = document.getElementsByName('author')[0].value
+    let pages = document.getElementsByName('pages')[0].value
     let read = false
 
     let myBook = new Book(name,author,pages, read)
@@ -49,7 +44,7 @@ function showLibrary()
     {
         const book = document.createElement('div')
 
-        book.innerHTML = '<h2>' + title + '</h2> <h3>by ' + author + '</h3><br> <h4>by ' + pages + '</h4>'
+        book.innerHTML = '<h4>' + title + '</h4> <h5>by ' + author + '</h5><br> <p>by ' + pages + '</p>'
         book.classList.add('books')
         bookList.appendChild(book)
 
