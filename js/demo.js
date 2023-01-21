@@ -42,7 +42,7 @@ function showLibrary()
     {
         const book = document.createElement('div')
 
-        book.innerHTML = '<h4>' + myLibrary[mybooks].title + '</h4> <h5>by ' + myLibrary[mybooks].author + '</h5><br> <p>' + myLibrary[mybooks].pages + 'pages </p>'
+        book.innerHTML = '<h4>' + myLibrary[mybooks].title + '</h4> <h5>by ' + myLibrary[mybooks].author + '</h5><br> <h6>' + myLibrary[mybooks].pages + 'pages </h6>'
         book.classList.add('books')
         bookList.appendChild(book)
 
