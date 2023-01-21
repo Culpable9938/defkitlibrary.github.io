@@ -36,13 +36,19 @@ function addBookToLibrary() {
 function showLibrary() 
 {
     const bookList = document.querySelector('#library');
-    bookList.innerHTML = "";
+    const books = document.querySelectorAll(".books")
+
+    for (let i = 0; i < books.length; i++)
+    {
+        books[i].remove();
+    }
 
     for(let mybooks = 0; mybooks < myLibrary.length; mybooks++)
     {
         const book = document.createElement('div')
 
         book.innerHTML = 'This is the book'
+        book.classList.add('books')
         bookList.appendChild(book)
     }
 }
