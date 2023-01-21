@@ -123,7 +123,7 @@ h6 { font-size: 1.5rem; letter-spacing: 0; }
   h3 { font-size: 3.6rem; }
   h4 { font-size: 2.0rem; }
   h5 { font-size: 1.4rem; }
-  h6 { font-size: 0.5rem; }
+  h6 { font-size: 1rem; text-align: right;}
 }
 
 #library
@@ -139,7 +139,7 @@ h6 { font-size: 1.5rem; letter-spacing: 0; }
   border: 1px solid #D1D1D1;
   margin: 5px;
   margin-left: 0px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 p {
