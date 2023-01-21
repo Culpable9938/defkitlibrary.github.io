@@ -47,7 +47,7 @@
   .one-third.column               { width: 30.6666666667%; }
   .two-thirds.column              { width: 65.3333333333%; }
 
-  .one-half.column                { width: 48%; }
+  .one-half.column                { width: fit-content; max-width: 70%;}
 
   /* Offsets */
   .offset-by-one.column,
