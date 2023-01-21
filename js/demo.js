@@ -35,10 +35,8 @@ function addBookToLibrary() {
 
 function showLibrary() 
 {
-
-    clearLibrary();
-
     const bookList = document.querySelector('#library');
+    bookList.innerHTML = "";
 
     for(let mybooks = 0; mybooks < myLibrary.length; mybooks++)
     {
@@ -47,13 +45,6 @@ function showLibrary()
         book.innerHTML = 'This is the book'
         bookList.appendChild(book)
     }
-}
-
-function clearLibrary()
-{
-    const bookList = document.querySelector('#library');
-
-    bookList.innerHTML = ""
 }
 
 showLibrary()
