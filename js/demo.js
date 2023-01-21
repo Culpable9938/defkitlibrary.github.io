@@ -15,9 +15,9 @@ function Book(title, author, pages, read)
 
 
 function addBookToLibrary() { 
-    let name = document.getElementsByName('title')[0].value
-    let author = document.getElementsByName('author')[0].value
-    let pages = document.getElementsByName('pages')[0].value
+    let name = document.getElementById('title').value
+    let author = document.getElementById('author').value
+    let pages = document.getElementById('pages').value
     let read = false
 
     let myBook = new Book(name,author,pages, read)
