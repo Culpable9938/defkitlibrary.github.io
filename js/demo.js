@@ -29,6 +29,7 @@ function addBookToLibrary() {
     myLibrary.push(myBook)
 
 
+
     showLibrary()
 
 } 
@@ -36,6 +37,9 @@ function addBookToLibrary() {
 
 function showLibrary() 
 {
+
+    clearLibrary();
+
     const bookList = document.querySelector('#library');
 
     for(let mybooks = 0; mybooks < myLibrary.length; mybooks++)
@@ -47,3 +51,9 @@ function showLibrary()
     }
 }
 
+function clearLibrary()
+{
+    const bookList = document.querySelector('#library');
+
+    bookList.innerHTML = ""
+}
